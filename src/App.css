@@ -1,38 +1,93 @@
-.App {
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  min-height: 100vh;
+  background-image:linear-gradient(to bottom,rgb(130,235,235)1%,pink 50%,rgb(130,235,235));
+}
+#Navbar{
+  height:50px;
+  background-color: rgb(13,55,119);
+  padding: 15px;
+  font-size: 30px;
+  margin-bottom: 3rem;
+  font-family: 'Courgette',cursive;
+  display: flex;
+  justify-content: space-around;
+}
+.active{
+  color: red;
+}
+.notactive{
+  color:white;
+}
+.active:hover{
+  color:'white';
+  text-shadow:1px 1px 15px red;
+}
+                                                        
+.box1{
+  display: flex;
+  justify-content: space-between;
+  margin:15px 80px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.btn1{
+  width:200px;
+  height:40px;
+  border-radius: 25px;
+  background-color:white;
+}
+.btn1:hover{
+  background-color:red;
+  cursor: pointer;
+  font-weight: bold;
+}
+.table{
+  margin:15px 80px;
+  width:88%;
+  border-collapse:collapse;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.table,th,td{
+  padding: 15px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex1{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  margin: 60px;
+  column-gap: 200px;
+  row-gap: 100px;
 }
-
-.App-link {
-  color: #61dafb;
+input{
+  background: transparent;
+  border-color: transparent;
+  width:300px;
+  height:30px;
+  font-size: 15px;
 }
+input:focus {
+  outline: none;
+}
+fieldset{
+ border: 2px solid gray;
+ border-radius: 10px;
+ width:400px;
+ height: 60px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+fieldset:hover{
+  border-color:dodgerblue;
+  background-color:cyan;
+}
+.flex2{
+  margin-right: 150px;
+  float: right;
+  display: flex;
+  column-gap: 70px;;
 }
